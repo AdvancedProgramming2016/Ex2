@@ -1,9 +1,11 @@
 
-#ifndef EX2_SUBJECT_H
-#define EX2_SUBJECT_H
+#ifndef EX2_ISUBJECT_H
+#define EX2_ISUBJECT_H
+
 
 #include "IObserver.h"
 
+class IObserver;
 /**
  * Subject interface, will contain observers and receive updates from them.
  */
@@ -14,12 +16,12 @@ public:
     /*
      * Adds a new observer.
      */
-    virtual void registerObserver(IObserver observer) = 0;
+    virtual void registerObserver(IObserver* observer) = 0;
 
     /*
      * Removes a given observer.
      */
-    virtual void unregisterObserver(IObserver observer) = 0;
+    virtual void unregisterObserver(IObserver* observer) = 0;
 
     /*
      * Notifies the observers.
@@ -27,4 +29,4 @@ public:
     virtual void notifyObserver() = 0;
 };
 
-#endif //EX2_SUBJECT_H
+#endif //EX2_ISUBJECT_H

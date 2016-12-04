@@ -73,9 +73,9 @@ public:
      */
     std::vector<Taxi *> &getTaxis();
 
-    virtual void registerObserver(IObserver observer) override;
+    virtual void registerObserver(IObserver *observer) override;
 
-    virtual void unregisterObserver(IObserver observer) override;
+    virtual void unregisterObserver(IObserver *observer) override;
 
     virtual void notifyObserver() override;
 

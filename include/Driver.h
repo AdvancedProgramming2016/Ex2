@@ -80,7 +80,7 @@ public:
     /*
      * Send update about the driver.
      */
-    virtual void update(ISubject subject) override;
+    virtual void update(ISubject *subject) override;
 };
 
 

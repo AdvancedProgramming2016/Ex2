@@ -41,11 +41,11 @@ void TaxiCenter::createTaxi() {
 
 }
 
-void TaxiCenter::registerObserver(IObserver observer) {
+void TaxiCenter::registerObserver(IObserver *observer) {
 
 }
 
-void TaxiCenter::unregisterObserver(IObserver observer) {
+void TaxiCenter::unregisterObserver(IObserver *observer) {
 
 }
 

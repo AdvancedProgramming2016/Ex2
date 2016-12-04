@@ -49,6 +49,6 @@ Driver::~Driver() {
     delete taxi;
 }
 
-void Driver::update(ISubject subject) {
+void Driver::update(ISubject *subject) {
 
 }

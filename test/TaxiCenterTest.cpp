@@ -50,7 +50,7 @@ TEST_F(TaxiCenterTest, observerTest) {
 
     int       initObserverNum = 0;
     int       postObserverNum = 0;
-    IObserver observer;
+    IObserver *observer;
 
     initObserverNum = (int) taxiCenter.getObservers().size();
     taxiCenter.registerObserver(observer);
